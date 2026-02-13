@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[type=number] { -moz-appearance: textfield; }
+
+.flatpickr-calendar { border-radius: 14px !important; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10) !important; }
+.flatpickr-day.selected { background: #0f172a !important; border-color: #0f172a !important; }
+
+/* item-chip style (because html has class but no css here) */
+.item-chip{
+  @apply rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 active:scale-[0.99] transition;
+}
+/* smooth scrollbar for list */
+.list-wrap::-webkit-scrollbar { width: 10px; }
+.list-wrap::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 999px; }
